@@ -1,31 +1,13 @@
 @import "fonts"
 @import "vars"
 
+
 @import "../libs/magnific-popup/dist/magnific-popup.css"
 
-
-html
-	font-family: sans-serif
-	-ms-text-size-adjust: 100%
-	-webkit-text-size-adjust: 100%
-
-body
-	margin: 0
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary
 	display: block
 
-audio:not([controls])
-	display: none
-	height: 0
-
-[hidden], template
-	display: none
-
-a
-	background-color: transparent
-	&:active, &:hover
-		outline: 0
 
 b, strong
 	font-weight: bold
@@ -56,7 +38,6 @@ select
 	text-transform: none
 
 button, html input[type="button"]
-	-webkit-appearance: button
 	cursor: pointer
 
 input
@@ -116,13 +97,9 @@ td, th
 html
 	font-size: 10px
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-
-body
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-	font-size: 14px
-	line-height: 1.42857143
-	color: #333333
-	background-color: #ffffff
+	font-family: sans-serif
+	-ms-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
 
 input, button, select, textarea
 	font-family: inherit
@@ -130,6 +107,7 @@ input, button, select, textarea
 	line-height: inherit
 
 a
+	background-color: transparent
 	color: #337ab7
 	text-decoration: none
 	&:hover
@@ -140,6 +118,8 @@ a
 		text-decoration: underline
 		outline: 5px auto -webkit-focus-ring-color
 		outline-offset: -2px
+	&:active, &:hover
+		outline: 0
 
 figure
 	margin: 0
@@ -152,31 +132,12 @@ img
 	max-width: 100%
 	height: auto
 
-.img-rounded
-	border-radius: 6px
-
-.img-thumbnail
-	padding: 4px
-	line-height: 1.42857143
-	background-color: #ffffff
-	border: 1px solid #dddddd
-	border-radius: 4px
-	-webkit-transition: all 0.2s ease-in-out
-	-o-transition: all 0.2s ease-in-out
-	transition: all 0.2s ease-in-out
-	display: inline-block
-	max-width: 100%
-	height: auto
-
-
-[role="button"]
-	cursor: pointer
 
 .container, .container-fluid
 	margin-right: auto
 	margin-left: auto
-	padding-left: 15px
-	padding-right: 15px
+	// padding-left: 15px
+	// padding-right: 15px
 
 @media (min-width: 768px)
 	.container
@@ -184,177 +145,174 @@ img
 
 @media (min-width: 992px)
 	.container
-		width: 970px
+		width: 990px
 
-@media (min-width: 1200px)
-	.container
-		width: 1170px
 
 .row
 	margin-left: -15px
 	margin-right: -15px
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+.col-1, .col-sm-1, .col-md-1, .col-2, .col-sm-2, .col-md-2, .col-3, .col-sm-3, .col-md-3, .col-4, .col-sm-4, .col-md-4, .col-5, .col-sm-5, .col-md-5, .col-6, .col-sm-6, .col-md-6, .col-7, .col-sm-7, .col-md-7, .col-8, .col-sm-8, .col-md-8, .col-9, .col-sm-9, .col-md-9, .col-10, .col-sm-10, .col-md-10, .col-11, .col-sm-11, .col-md-11, .col-12, .col-sm-12, .col-md-12
 	position: relative
 	min-height: 1px
 	padding-left: 15px
 	padding-right: 15px
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11
 	float: left
 
-.col-xs-12
+.col-12
 	float: left
 	width: 100%
 
-.col-xs-11
+.col-11
 	width: 91.66666667%
 
-.col-xs-10
+.col-10
 	width: 83.33333333%
 
-.col-xs-9
+.col-9
 	width: 75%
 
-.col-xs-8
+.col-8
 	width: 66.66666667%
 
-.col-xs-7
+.col-7
 	width: 58.33333333%
 
-.col-xs-6
+.col-6
 	width: 50%
 
-.col-xs-5
+.col-5
 	width: 41.66666667%
 
-.col-xs-4
+.col-4
 	width: 33.33333333%
 
-.col-xs-3
+.col-3
 	width: 25%
 
-.col-xs-2
+.col-2
 	width: 16.66666667%
 
-.col-xs-1
+.col-1
 	width: 8.33333333%
 
-.col-xs-pull-12
+.col-pull-12
 	right: 100%
 
-.col-xs-pull-11
+.col-pull-11
 	right: 91.66666667%
 
-.col-xs-pull-10
+.col-pull-10
 	right: 83.33333333%
 
-.col-xs-pull-9
+.col-pull-9
 	right: 75%
 
-.col-xs-pull-8
+.col-pull-8
 	right: 66.66666667%
 
-.col-xs-pull-7
+.col-pull-7
 	right: 58.33333333%
 
-.col-xs-pull-6
+.col-pull-6
 	right: 50%
 
-.col-xs-pull-5
+.col-pull-5
 	right: 41.66666667%
 
-.col-xs-pull-4
+.col-pull-4
 	right: 33.33333333%
 
-.col-xs-pull-3
+.col-pull-3
 	right: 25%
 
-.col-xs-pull-2
+.col-pull-2
 	right: 16.66666667%
 
-.col-xs-pull-1
+.col-pull-1
 	right: 8.33333333%
 
-.col-xs-pull-0
+.col-pull-0
 	right: auto
 
-.col-xs-push-12
+.col-push-12
 	left: 100%
 
-.col-xs-push-11
+.col-push-11
 	left: 91.66666667%
 
-.col-xs-push-10
+.col-push-10
 	left: 83.33333333%
 
-.col-xs-push-9
+.col-push-9
 	left: 75%
 
-.col-xs-push-8
+.col-push-8
 	left: 66.66666667%
 
-.col-xs-push-7
+.col-push-7
 	left: 58.33333333%
 
-.col-xs-push-6
+.col-push-6
 	left: 50%
 
-.col-xs-push-5
+.col-push-5
 	left: 41.66666667%
 
-.col-xs-push-4
+.col-push-4
 	left: 33.33333333%
 
-.col-xs-push-3
+.col-push-3
 	left: 25%
 
-.col-xs-push-2
+.col-push-2
 	left: 16.66666667%
 
-.col-xs-push-1
+.col-push-1
 	left: 8.33333333%
 
-.col-xs-push-0
+.col-push-0
 	left: auto
 
-.col-xs-offset-12
+.col-offset-12
 	margin-left: 100%
 
-.col-xs-offset-11
+.col-offset-11
 	margin-left: 91.66666667%
 
-.col-xs-offset-10
+.col-offset-10
 	margin-left: 83.33333333%
 
-.col-xs-offset-9
+.col-offset-9
 	margin-left: 75%
 
-.col-xs-offset-8
+.col-offset-8
 	margin-left: 66.66666667%
 
-.col-xs-offset-7
+.col-offset-7
 	margin-left: 58.33333333%
 
-.col-xs-offset-6
+.col-offset-6
 	margin-left: 50%
 
-.col-xs-offset-5
+.col-offset-5
 	margin-left: 41.66666667%
 
-.col-xs-offset-4
+.col-offset-4
 	margin-left: 33.33333333%
 
-.col-xs-offset-3
+.col-offset-3
 	margin-left: 25%
 
-.col-xs-offset-2
+.col-offset-2
 	margin-left: 16.66666667%
 
-.col-xs-offset-1
+.col-offset-1
 	margin-left: 8.33333333%
 
-.col-xs-offset-0
+.col-offset-0
 	margin-left: 0%
 
 @media (min-width: 768px)
@@ -571,112 +529,6 @@ img
 	.col-md-offset-0
 		margin-left: 0%
 
-@media (min-width: 1200px)
-	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11
-		float: left
-	.col-lg-12
-		float: left
-		width: 100%
-	.col-lg-11
-		width: 91.66666667%
-	.col-lg-10
-		width: 83.33333333%
-	.col-lg-9
-		width: 75%
-	.col-lg-8
-		width: 66.66666667%
-	.col-lg-7
-		width: 58.33333333%
-	.col-lg-6
-		width: 50%
-	.col-lg-5
-		width: 41.66666667%
-	.col-lg-4
-		width: 33.33333333%
-	.col-lg-3
-		width: 25%
-	.col-lg-2
-		width: 16.66666667%
-	.col-lg-1
-		width: 8.33333333%
-	.col-lg-pull-12
-		right: 100%
-	.col-lg-pull-11
-		right: 91.66666667%
-	.col-lg-pull-10
-		right: 83.33333333%
-	.col-lg-pull-9
-		right: 75%
-	.col-lg-pull-8
-		right: 66.66666667%
-	.col-lg-pull-7
-		right: 58.33333333%
-	.col-lg-pull-6
-		right: 50%
-	.col-lg-pull-5
-		right: 41.66666667%
-	.col-lg-pull-4
-		right: 33.33333333%
-	.col-lg-pull-3
-		right: 25%
-	.col-lg-pull-2
-		right: 16.66666667%
-	.col-lg-pull-1
-		right: 8.33333333%
-	.col-lg-pull-0
-		right: auto
-	.col-lg-push-12
-		left: 100%
-	.col-lg-push-11
-		left: 91.66666667%
-	.col-lg-push-10
-		left: 83.33333333%
-	.col-lg-push-9
-		left: 75%
-	.col-lg-push-8
-		left: 66.66666667%
-	.col-lg-push-7
-		left: 58.33333333%
-	.col-lg-push-6
-		left: 50%
-	.col-lg-push-5
-		left: 41.66666667%
-	.col-lg-push-4
-		left: 33.33333333%
-	.col-lg-push-3
-		left: 25%
-	.col-lg-push-2
-		left: 16.66666667%
-	.col-lg-push-1
-		left: 8.33333333%
-	.col-lg-push-0
-		left: auto
-	.col-lg-offset-12
-		margin-left: 100%
-	.col-lg-offset-11
-		margin-left: 91.66666667%
-	.col-lg-offset-10
-		margin-left: 83.33333333%
-	.col-lg-offset-9
-		margin-left: 75%
-	.col-lg-offset-8
-		margin-left: 66.66666667%
-	.col-lg-offset-7
-		margin-left: 58.33333333%
-	.col-lg-offset-6
-		margin-left: 50%
-	.col-lg-offset-5
-		margin-left: 41.66666667%
-	.col-lg-offset-4
-		margin-left: 33.33333333%
-	.col-lg-offset-3
-		margin-left: 25%
-	.col-lg-offset-2
-		margin-left: 16.66666667%
-	.col-lg-offset-1
-		margin-left: 8.33333333%
-	.col-lg-offset-0
-		margin-left: 0%
 
 .clearfix
 	&:before, &:after
@@ -684,11 +536,6 @@ img
 		display: table
 
 .container
-	&:before, &:after
-		content: " "
-		display: table
-
-.container-fluid
 	&:before, &:after
 		content: " "
 		display: table
@@ -701,30 +548,174 @@ img
 .clearfix:after, .container:after, .container-fluid:after, .row:after
 	clear: both
 
-.center-block
-	display: block
-	margin-left: auto
-	margin-right: auto
 
 
-.hide
-	display: none !important
 
-.show
-	display: block !important
 
-.invisible
-	visibility: hidden
+.columns
+	position: relative
+	min-height: 1px
+	float: left
 
-.text-hide
-	font: 0/0 a
-	color: transparent
-	text-shadow: none
-	background-color: transparent
-	border: 0
 
-.hidden
-	display: none !important
+.btn
+	line-height: $default_line_height
+	width: 140px
+	min-height: 34px
+	font-size: 14px
+	color: #fff
+	background-color: #42689d
+	background-image: linear-gradient(to bottom, #42689d, #2b487b)
+	border: none
+	outline: none
+	border-radius: 1px
+	transition: all 0.2s ease 0s
+	&:hover
+		background-color: #fdcb00
+		background-image: linear-gradient(to bottom, #fdcb00, #f79b03)
+	&:active
+		background-color: #f79b03
+		background-image: linear-gradient(to bottom, #f79b03, #fdcb00)
 
-.affix
-	position: fixed
+
+*
+	// outline: 1px solid #333
+
+
+body
+	margin: 0
+	font-family: $default_font_family, Helvetica, Arial, sans-serif
+	font-size: 16px
+	line-height: $default_line_height
+	color: $default_text_color
+
+.page-wrapper
+	max-width: 1200px
+	margin: 0 auto
+	background: #fff url('../img/top-bg.jpg') no-repeat
+	background-position: 0 0
+	background-size: contain
+	min-height: 100vh
+
+.top-line
+	min-height: 85px
+	margin: 0 auto
+
+	.container
+		max-width: 750px
+		width: auto
+
+	.columns
+		&::after
+			content: ''
+			position: absolute
+			top: 15px
+			right: 0
+			display: inline-block
+			width: 1px
+			height: 47px
+			background-color: #000
+		&:last-child
+			&::after
+				display: none
+	.column-1
+		width: 35%
+		padding-right: 25px
+	.column-2
+		width: 23%
+		padding: 0 20px
+	.column-3
+		width: 20%
+	.column-4
+		width: 22%
+		padding-left: 20px
+
+
+.logo-wrap, .top-line-btn-wrap, .top-line-worktime-wrap, .top-line-contacts-wrap
+	min-height: 85px
+
+
+.logo-wrap
+	.logo-img-wrap
+		position: absolute
+		top: 50%
+		left: 15px
+		transform: translateY(-55%)
+	.logo-img
+		float: left
+	
+	.logo-text
+		padding-left: 85px
+		padding-top: 15px
+		
+	.logo-title
+		font-size: 18px
+		font-weight: bold
+	.logo-subtitle
+		font-size: 12px
+
+
+.top-line-btn-wrap
+	line-height: 75px
+	text-align: center
+
+
+.top-line-worktime, .top-line-contacts
+	padding-top: 12px
+.top-line-worktime
+	text-align: center
+
+.tel a
+		color: $tel_color
+		text-decoration: none
+		cursor: auto
+		&:hover
+			color: $tel_color
+		&:active
+			color: $tel_color
+
+.mail a 
+	color: inherit
+
+
+
+
+
+.page-nav
+	min-height: 41px
+	background-color: #0069a8
+
+.top-menu
+	height: 100%
+	margin: 0 -15px 0 -15px
+	padding: 0
+	font: 1em/41px $bold_font_family
+	list-style-type: none
+
+
+	li
+		float: left
+		&:last-child
+			a
+				padding: 0 42px
+	a
+		display: block
+		padding: 0 2.375em
+		color: #fff
+		text-transform: uppercase
+		transition: all .2s
+		&:hover
+			background-color: #365d97
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media"

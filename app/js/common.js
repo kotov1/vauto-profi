@@ -3,8 +3,9 @@
 /*CUSTOM JS START*/
 $(function() {
 
-
-	asdasd
+$(".menu-collapsed").click(function() {
+	$(this).toggleClass("menu-expanded");
+});
 
 
 
