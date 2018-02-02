@@ -4,6 +4,13 @@
 
 @import "../libs/magnific-popup/dist/magnific-popup.css"
 
+// body input:focus:required:invalid,
+// body textarea:focus:required:invalid
+// 	color: #fff
+// body input:required:valid,
+// body textarea:required:valid
+// 	color: #fff
+
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary
 	display: block
@@ -127,407 +134,30 @@ figure
 img
 	vertical-align: middle
 
+
+
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
 
 
-.container, .container-fluid
+.wrapper, .wrapper-fluid
 	margin-right: auto
 	margin-left: auto
 	// padding-left: 15px
 	// padding-right: 15px
 
 @media (min-width: 768px)
-	.container
+	.wrapper
 		width: 750px
 
 @media (min-width: 992px)
-	.container
+	.wrapper
 		width: 990px
 
 
-.row
-	margin-left: -15px
-	margin-right: -15px
 
-.col-1, .col-sm-1, .col-md-1, .col-2, .col-sm-2, .col-md-2, .col-3, .col-sm-3, .col-md-3, .col-4, .col-sm-4, .col-md-4, .col-5, .col-sm-5, .col-md-5, .col-6, .col-sm-6, .col-md-6, .col-7, .col-sm-7, .col-md-7, .col-8, .col-sm-8, .col-md-8, .col-9, .col-sm-9, .col-md-9, .col-10, .col-sm-10, .col-md-10, .col-11, .col-sm-11, .col-md-11, .col-12, .col-sm-12, .col-md-12
-	position: relative
-	min-height: 1px
-	padding-left: 15px
-	padding-right: 15px
-
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11
-	float: left
-
-.col-12
-	float: left
-	width: 100%
-
-.col-11
-	width: 91.66666667%
-
-.col-10
-	width: 83.33333333%
-
-.col-9
-	width: 75%
-
-.col-8
-	width: 66.66666667%
-
-.col-7
-	width: 58.33333333%
-
-.col-6
-	width: 50%
-
-.col-5
-	width: 41.66666667%
-
-.col-4
-	width: 33.33333333%
-
-.col-3
-	width: 25%
-
-.col-2
-	width: 16.66666667%
-
-.col-1
-	width: 8.33333333%
-
-.col-pull-12
-	right: 100%
-
-.col-pull-11
-	right: 91.66666667%
-
-.col-pull-10
-	right: 83.33333333%
-
-.col-pull-9
-	right: 75%
-
-.col-pull-8
-	right: 66.66666667%
-
-.col-pull-7
-	right: 58.33333333%
-
-.col-pull-6
-	right: 50%
-
-.col-pull-5
-	right: 41.66666667%
-
-.col-pull-4
-	right: 33.33333333%
-
-.col-pull-3
-	right: 25%
-
-.col-pull-2
-	right: 16.66666667%
-
-.col-pull-1
-	right: 8.33333333%
-
-.col-pull-0
-	right: auto
-
-.col-push-12
-	left: 100%
-
-.col-push-11
-	left: 91.66666667%
-
-.col-push-10
-	left: 83.33333333%
-
-.col-push-9
-	left: 75%
-
-.col-push-8
-	left: 66.66666667%
-
-.col-push-7
-	left: 58.33333333%
-
-.col-push-6
-	left: 50%
-
-.col-push-5
-	left: 41.66666667%
-
-.col-push-4
-	left: 33.33333333%
-
-.col-push-3
-	left: 25%
-
-.col-push-2
-	left: 16.66666667%
-
-.col-push-1
-	left: 8.33333333%
-
-.col-push-0
-	left: auto
-
-.col-offset-12
-	margin-left: 100%
-
-.col-offset-11
-	margin-left: 91.66666667%
-
-.col-offset-10
-	margin-left: 83.33333333%
-
-.col-offset-9
-	margin-left: 75%
-
-.col-offset-8
-	margin-left: 66.66666667%
-
-.col-offset-7
-	margin-left: 58.33333333%
-
-.col-offset-6
-	margin-left: 50%
-
-.col-offset-5
-	margin-left: 41.66666667%
-
-.col-offset-4
-	margin-left: 33.33333333%
-
-.col-offset-3
-	margin-left: 25%
-
-.col-offset-2
-	margin-left: 16.66666667%
-
-.col-offset-1
-	margin-left: 8.33333333%
-
-.col-offset-0
-	margin-left: 0%
-
-@media (min-width: 768px)
-	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11
-		float: left
-	.col-sm-12
-		float: left
-		width: 100%
-	.col-sm-11
-		width: 91.66666667%
-	.col-sm-10
-		width: 83.33333333%
-	.col-sm-9
-		width: 75%
-	.col-sm-8
-		width: 66.66666667%
-	.col-sm-7
-		width: 58.33333333%
-	.col-sm-6
-		width: 50%
-	.col-sm-5
-		width: 41.66666667%
-	.col-sm-4
-		width: 33.33333333%
-	.col-sm-3
-		width: 25%
-	.col-sm-2
-		width: 16.66666667%
-	.col-sm-1
-		width: 8.33333333%
-	.col-sm-pull-12
-		right: 100%
-	.col-sm-pull-11
-		right: 91.66666667%
-	.col-sm-pull-10
-		right: 83.33333333%
-	.col-sm-pull-9
-		right: 75%
-	.col-sm-pull-8
-		right: 66.66666667%
-	.col-sm-pull-7
-		right: 58.33333333%
-	.col-sm-pull-6
-		right: 50%
-	.col-sm-pull-5
-		right: 41.66666667%
-	.col-sm-pull-4
-		right: 33.33333333%
-	.col-sm-pull-3
-		right: 25%
-	.col-sm-pull-2
-		right: 16.66666667%
-	.col-sm-pull-1
-		right: 8.33333333%
-	.col-sm-pull-0
-		right: auto
-	.col-sm-push-12
-		left: 100%
-	.col-sm-push-11
-		left: 91.66666667%
-	.col-sm-push-10
-		left: 83.33333333%
-	.col-sm-push-9
-		left: 75%
-	.col-sm-push-8
-		left: 66.66666667%
-	.col-sm-push-7
-		left: 58.33333333%
-	.col-sm-push-6
-		left: 50%
-	.col-sm-push-5
-		left: 41.66666667%
-	.col-sm-push-4
-		left: 33.33333333%
-	.col-sm-push-3
-		left: 25%
-	.col-sm-push-2
-		left: 16.66666667%
-	.col-sm-push-1
-		left: 8.33333333%
-	.col-sm-push-0
-		left: auto
-	.col-sm-offset-12
-		margin-left: 100%
-	.col-sm-offset-11
-		margin-left: 91.66666667%
-	.col-sm-offset-10
-		margin-left: 83.33333333%
-	.col-sm-offset-9
-		margin-left: 75%
-	.col-sm-offset-8
-		margin-left: 66.66666667%
-	.col-sm-offset-7
-		margin-left: 58.33333333%
-	.col-sm-offset-6
-		margin-left: 50%
-	.col-sm-offset-5
-		margin-left: 41.66666667%
-	.col-sm-offset-4
-		margin-left: 33.33333333%
-	.col-sm-offset-3
-		margin-left: 25%
-	.col-sm-offset-2
-		margin-left: 16.66666667%
-	.col-sm-offset-1
-		margin-left: 8.33333333%
-	.col-sm-offset-0
-		margin-left: 0%
-
-@media (min-width: 992px)
-	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11
-		float: left
-	.col-md-12
-		float: left
-		width: 100%
-	.col-md-11
-		width: 91.66666667%
-	.col-md-10
-		width: 83.33333333%
-	.col-md-9
-		width: 75%
-	.col-md-8
-		width: 66.66666667%
-	.col-md-7
-		width: 58.33333333%
-	.col-md-6
-		width: 50%
-	.col-md-5
-		width: 41.66666667%
-	.col-md-4
-		width: 33.33333333%
-	.col-md-3
-		width: 25%
-	.col-md-2
-		width: 16.66666667%
-	.col-md-1
-		width: 8.33333333%
-	.col-md-pull-12
-		right: 100%
-	.col-md-pull-11
-		right: 91.66666667%
-	.col-md-pull-10
-		right: 83.33333333%
-	.col-md-pull-9
-		right: 75%
-	.col-md-pull-8
-		right: 66.66666667%
-	.col-md-pull-7
-		right: 58.33333333%
-	.col-md-pull-6
-		right: 50%
-	.col-md-pull-5
-		right: 41.66666667%
-	.col-md-pull-4
-		right: 33.33333333%
-	.col-md-pull-3
-		right: 25%
-	.col-md-pull-2
-		right: 16.66666667%
-	.col-md-pull-1
-		right: 8.33333333%
-	.col-md-pull-0
-		right: auto
-	.col-md-push-12
-		left: 100%
-	.col-md-push-11
-		left: 91.66666667%
-	.col-md-push-10
-		left: 83.33333333%
-	.col-md-push-9
-		left: 75%
-	.col-md-push-8
-		left: 66.66666667%
-	.col-md-push-7
-		left: 58.33333333%
-	.col-md-push-6
-		left: 50%
-	.col-md-push-5
-		left: 41.66666667%
-	.col-md-push-4
-		left: 33.33333333%
-	.col-md-push-3
-		left: 25%
-	.col-md-push-2
-		left: 16.66666667%
-	.col-md-push-1
-		left: 8.33333333%
-	.col-md-push-0
-		left: auto
-	.col-md-offset-12
-		margin-left: 100%
-	.col-md-offset-11
-		margin-left: 91.66666667%
-	.col-md-offset-10
-		margin-left: 83.33333333%
-	.col-md-offset-9
-		margin-left: 75%
-	.col-md-offset-8
-		margin-left: 66.66666667%
-	.col-md-offset-7
-		margin-left: 58.33333333%
-	.col-md-offset-6
-		margin-left: 50%
-	.col-md-offset-5
-		margin-left: 41.66666667%
-	.col-md-offset-4
-		margin-left: 33.33333333%
-	.col-md-offset-3
-		margin-left: 25%
-	.col-md-offset-2
-		margin-left: 16.66666667%
-	.col-md-offset-1
-		margin-left: 8.33333333%
-	.col-md-offset-0
-		margin-left: 0%
 
 
 .clearfix
@@ -535,7 +165,7 @@ img
 		content: " "
 		display: table
 
-.container
+.wrapper
 	&:before, &:after
 		content: " "
 		display: table
@@ -545,11 +175,12 @@ img
 		content: " "
 		display: table
 
-.clearfix:after, .container:after, .container-fluid:after, .row:after
+.clearfix:after, .wrapper:after, .wrapper-fluid:after, .row:after
 	clear: both
 
 
-
+h1, h2, h3
+	font-family: $bold_font_family
 
 
 .columns
@@ -560,22 +191,24 @@ img
 
 .btn
 	line-height: $default_line_height
-	width: 140px
+	padding: 10px 40px
 	min-height: 34px
 	font-size: 14px
-	color: #fff
-	background-color: #42689d
-	background-image: linear-gradient(to bottom, #42689d, #2b487b)
+	color: #000
 	border: none
 	outline: none
-	border-radius: 1px
+	border-radius: 2px
 	transition: all 0.2s ease 0s
+	background-color: #eecb13
+	background-image: linear-gradient(to bottom, #eecb13 35%, #c77900)
+	box-shadow: 0 5px 5px -4px #c77900, 0 12px 10px -11px #ad6c15
+	
 	&:hover
 		background-color: #fdcb00
-		background-image: linear-gradient(to bottom, #fdcb00, #f79b03)
+		background-image: linear-gradient(to bottom, #fdcb00 35%, #f79b03)
 	&:active
 		background-color: #f79b03
-		background-image: linear-gradient(to bottom, #f79b03, #fdcb00)
+		background-image: linear-gradient(to bottom, #f79b03 35%, #fdcb00)
 
 
 *
@@ -601,7 +234,7 @@ body
 	min-height: 85px
 	margin: 0 auto
 
-	.container
+	.wrapper
 		max-width: 750px
 		width: auto
 
@@ -615,20 +248,22 @@ body
 			width: 1px
 			height: 47px
 			background-color: #000
-		&:last-child
-			&::after
-				display: none
+
 	.column-1
-		width: 35%
-		padding-right: 25px
+		width: 34%
 	.column-2
-		width: 23%
+		width: 24%
+		right: 42%
 		padding: 0 20px
 	.column-3
 		width: 20%
+		left: 25%
 	.column-4
 		width: 22%
+		left: 25%
 		padding-left: 20px
+		&::after
+			display: none
 
 
 .logo-wrap, .top-line-btn-wrap, .top-line-worktime-wrap, .top-line-contacts-wrap
@@ -636,17 +271,15 @@ body
 
 
 .logo-wrap
+	padding-top: 9px
 	.logo-img-wrap
-		position: absolute
-		top: 50%
-		left: 15px
-		transform: translateY(-55%)
-	.logo-img
+		width: 25%
 		float: left
 	
 	.logo-text
-		padding-left: 85px
-		padding-top: 15px
+		float: left
+		width: 75%
+		padding-top: 6px
 		
 	.logo-title
 		font-size: 18px
@@ -659,6 +292,13 @@ body
 	line-height: 75px
 	text-align: center
 
+.top-line-btn
+	padding: 0 10px
+	background-color: #42689d
+	background-image: linear-gradient(to bottom, #42689d, #2b487b)
+	color: #fff
+	box-shadow: none
+
 
 .top-line-worktime, .top-line-contacts
 	padding-top: 12px
@@ -666,20 +306,16 @@ body
 	text-align: center
 
 .tel a
-		color: $tel_color
+		color: $accent_color
 		text-decoration: none
 		cursor: auto
 		&:hover
-			color: $tel_color
+			color: $accent_color
 		&:active
-			color: $tel_color
+			color: $accent_color
 
 .mail a 
 	color: inherit
-
-
-
-
 
 .page-nav
 	min-height: 41px
@@ -712,9 +348,377 @@ body
 
 
 
+.content
+	background: url('../img/main-bg-img.png') no-repeat 120px -22px
 
 
 
+
+
+
+
+
+// ================================================
+.sevice-cards
+	.row
+		margin-left: -15px
+		margin-right: -15px
+
+	.block-title
+		margin-top: 12px
+		margin-bottom: 15px
+
+
+.service-columns
+	width: 16.66666667%
+	padding-right: 20px
+	padding-left: 20px
+
+.block-title
+	font: 2.25em $bold_font_family
+	color: #2c4e8e
+	text-align: center
+
+.service-card
+	min-height: 55px
+	margin-bottom: 15px
+	position: relative
+	background-color: #e1e1e1
+	border: 1px solid #a0a0a0
+	border-radius: 5px
+	font-size: 14px
+	text-align: center
+	&:hover
+		.card-hidden-text
+			display: block
+		.service-card-title
+			position: absolute
+			top: -17px
+			left: 50%
+			transform: translateX(-50%)
+			transition: all .5s
+		.service-card-tel
+			background-color: #09478c
+
+.card-hidden-text
+	display: none
+	padding: 1px 0 2px
+	color: #09478c
+
+
+.service-card-title
+	width: 100%
+	padding: 1px 0 2px
+	color: #04515a
+	background-image: url('../img/metro-icon.png')
+	background-repeat: no-repeat
+	background-position: 8px 39%
+	transition: none
+
+
+
+.service-card-tel
+	background-color: #464646
+	box-shadow: 0 -1px 0 #595959
+	transition: all .5s
+	a
+		cursor: default
+		color: #fff
+		text-decoration: none
+
+.service-card-more
+	padding: 1px 0 2px
+	a
+		cursor: default
+		color: #555
+
+
+
+
+
+
+
+
+
+
+
+
+.main-heading
+	margin-top: 7px
+	font: 3em $bold_font_family
+	color: #000
+	text-decoration: underline
+	&-colored
+		display: block
+		color: #2e5090
+		text-decoration: underline
+
+
+
+
+
+
+
+
+
+
+
+// ================================================
+.descr-columns
+	width: 50%
+.pl-100
+	padding-left: 100px
+
+.description-list
+	margin: 0
+	padding: 0
+	list-style-type: none
+	font-size: 1.125em
+	color: #2e5090
+	li
+		margin-bottom: 3px
+		padding: 1px 0 1px 25px
+		background: url('../img/list-icon.png') no-repeat 0 50%
+
+
+
+
+
+
+
+// ================================================
+.service-offer
+	margin-top: 43px
+	display: inline-block
+	padding: 20px 20px 29px
+	text-align: center
+	border: 6px solid $accent_color
+
+.offer-text, .offer-date
+	font-family: $bold_font_family
+	text-transform: uppercase
+.offer-text
+	font-size: 1.875em
+	color: #2e5090
+.offer-date
+	font-size: 2.5em
+	color: #ed1b23
+.offer-btn
+	margin-top: 14px
+
+.descr-img
+	margin-left: auto
+
+
+
+
+
+
+
+
+
+// ================================================
+.consultation-wrap
+	position: relative
+	z-index: 1
+.consultation
+	max-width: 832px
+	margin: 64px auto 0
+	padding: 25px 35px 25px 25px
+	border: 12px solid $accent_color
+	position: relative
+	background-color: #fff
+
+.consult-column-1,
+	width: 61%
+.consult-column-2
+	width: 39%
+
+
+.consultation-heading, .consult-form-descr-head
+	font: 2em $bold_font_family
+.consultation-heading
+	padding-right: 30px
+	width: 100%
+	top: -50px
+.c-fff
+	display: inline-block
+	padding: 0 10px
+	background-color: #fff
+.pl-10
+	display: inline-block
+	padding-left: 10px
+
+.consultation-heading-colored, .consult-form-descr-head
+	color: #395894
+.consultation-heading, .consultation-form-heading
+	position: absolute
+
+.consultation-form-heading
+	width: 110.5%
+	padding: 15px 0 15px 15px
+	top: -46px
+	right: -47px
+	background-color: $accent_color
+	color: #fff
+
+
+.consult-form-descr, .consult-form
+	margin-top: 65px	
+	padding-left: 10px
+
+.consult-form-descr-head
+	font-size: 1.875em
+	letter-spacing: -1px
+
+.hidden-text-desktop
+	display: none
+
+.consult-form-descr-list
+	margin-top: 5px
+	padding: 0
+	font-size: 1.125em
+	list-style-type: none
+	counter-reset: li
+	li
+		margin-bottom: 6px
+		padding-left: 30px
+		position: relative
+		&::before
+			counter-increment: li
+			content: counter(li, decimal-leading-zero)
+			font-size: 1em
+			position: absolute
+			left: 0
+
+.form
+	label
+		width: 100%
+		display: block
+		margin-bottom: 10px
+		min-height: 43px
+		background-color: $input_color
+		padding-left: 42px
+		background-repeat: no-repeat
+		background-position: 12px 50%
+		&.label-name
+			background-image: url('../img/name.png')
+		&.label-email
+			background-image: url('../img/email.png')
+		&.label-tel
+			background-image: url('../img/tel.png')
+		
+	input
+		width: 100%
+		padding: 14px 12px 12px 40px
+		background-color: $input_color
+		border: none
+		outline: none
+		border-left: 2px solid #fff
+		font-size: 14px
+		color: #000
+		&:focus
+			box-shadow: inset -3px 3px 20px -7px rgba(0, 0, 0, 0.5)
+
+		&::-webkit-input-placeholder
+			color: #000
+			opacity: 1
+
+		&:-moz-placeholder
+			color: #000
+			opacity: 1
+
+		&::-moz-placeholder
+			color: #000
+			opacity: 1
+
+		&:-ms-input-placeholder
+			color: #000
+			opacity: 1
+
+.form-btn-wrap
+	text-align: center
+	margin: 19px 0 15px
+.form-garanty
+	display: inline-block
+	text-align: center
+	font-size: 14px
+	color: #acacac
+
+
+
+
+
+
+
+// ================================================
+.advantages
+	position: relative
+	top: -90px
+	max-height: 767px
+	background: url('../img/advantages-bg.jpg') no-repeat
+	background-position: center
+	background-size: cover
+	color: #fff
+	&-content
+		padding-top: 95px
+		padding-left: 115px
+		background-image: url('../img/rect-long.png'), url('../img/rect.png'), url('../img/rect.png'), url('../img/rect.png'), url('../img/rect.png'), url('../img/rect.png'), url('../img/rect.png')
+		background-repeat: no-repeat
+		background-position: 100% -1%, 15% 30%, 100% 45%, 5% 49%, 92% 64%, 0% 68%, 82% 83%
+	&-title, &-subtitle, &-item-name, &-item-text
+		margin: 0
+	&-title
+		margin-bottom: -8px
+		position: relative
+		font-size: 2.25em
+	&-subtitle
+		display: inline-block
+		font-size: 1.875em
+		background-color: #08326e
+	&-items
+		padding: 47px 0 30px
+	&-column-1
+		margin-left: 21%
+	&-column-2
+		margin-left: 51%
+		top: -7px
+	&-column-3
+		margin-left: 14%
+		top: -48px
+	&-column-4
+		margin-left: 44%
+		top: -50px
+	&-column-5
+		margin-left: 8%
+		top: -98px
+	&-column-6
+		margin-left: 38%
+		top: -107px
+	&-item-name
+		max-width: 36%
+		display: inline-block
+		font-size: 1.5em
+	&-name-parts
+		display: inline-block
+		padding: 0 5px
+		background-color: #006fb5
+	&-item-text
+		max-width: 67%
+
+
+
+
+
+
+
+
+.advantages-btn-wrap
+	max-width: 284px
+	position: relative
+	top: -119px
+.advantages-btn
+	padding: 20px
 
 
 

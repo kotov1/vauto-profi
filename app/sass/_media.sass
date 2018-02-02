@@ -5,25 +5,33 @@
 
 @media only screen and (max-width : 991px)
 
-	.top-line
-		.columns
-			width: 50%
-		.top-line-contacts
-			text-align: center
-	
+
+	.top-line-contacts
+		text-align: center
+
+	.logo-wrap, .top-line-btn-wrap, .top-line-worktime-wrap, .top-line-contacts-wrap
+		min-height: auto
+
+	.logo-img-wrap
+		max-width: 60px
+
+	.page-nav
+		height: 0
+		min-height: auto
+
 	.menu-collapsed 
 		transition: all .25s
 		position: fixed
 		top: 10px
-		left: 9px
+		right: 9px
 		height: 36px
 		width: 36px
-		z-index: 1
+		z-index: 100
 		cursor: pointer
 		ul 
 			transition: all 0s
 			position: fixed
-			left: -9000px
+			right: -9000px
 	   
 
 	.bar 
@@ -32,10 +40,10 @@
 		height: 6px
 		width: 30px
 		border-radius: 15px
-		background-color: rgba(255, 255, 255, 0.95)
+		background-color: rgba(0, 0, 0, 0.95)
 		position: fixed
-		left: 12px
-		top: 24px
+		right: 12px
+		top: 105px
 		&:before 
 			transition: all .25s
 			content: ""
@@ -44,7 +52,7 @@
 			height: 6px
 			width: 30px
 			border-radius: 15px
-			background-color: rgba(255, 255, 255, 0.95)
+			background-color: rgba(0, 0, 0, 0.95)
 			top: -8px
 	   
 		&:after 
@@ -55,7 +63,7 @@
 			height: 6px
 			width: 30px
 			border-radius: 15px
-			background-color: rgba(255, 255, 255, 0.95)
+			background-color: rgba(0, 0, 0, 0.95)
 			top: 8px
 
 
@@ -71,12 +79,12 @@
 		width: 100%
 		border-radius: 0px
 		top: 0
-		left: 0
+		right: 0
 		background-color: rgba(45, 104, 165, 0.85)
 		ul 
 			transition: all 0s
 			position: relative
-			left: 0
+			right: 0
 			z-index: 2
 			text-align: center
 			padding-top: 60px
@@ -111,13 +119,254 @@
 				transform: rotate(-45deg)
 	     
 
+	.service-columns
+		width: 25%
+
+
+	.content
+		background-position: 0 0
+	.pl-100
+		padding-left: 0
+
+
+
+
+	.consultation-form-heading
+		padding-right: 25px
+	.form
+		input
+			padding-left: 25px
+
+
+	.advantages
+		max-height: 100%
+		&-content
+			padding-left: 0
+			background-position: 115% -11%, -15% 30%, 115% 45%, -24% 49%, 105% 64%, -33% 68%, 95% 83%
+		&-column-1
+			margin-left: 21%
+		&-column-2
+			margin-left: 51%
+			top: -7px
+		&-column-3
+			margin-left: 14%
+			top: -48px
+		&-column-4
+			margin-left: 44%
+			top: -50px
+		&-column-5
+			margin-left: 8%
+			top: -98px
+		&-column-6
+			margin-left: 38%
+			top: -107px
+
+	.advantages-btn-wrap
+		margin: 0 auto
+		top: -27px
+
 	/**/
 
 
 
-@media only screen and (max-width : 767px)
+
+
+
+
+
+@media only screen and (max-width : 768px)
+
+	.top-line
+		.columns
+			width: 33%
+			padding: 0
+			left: 0
+			right: 0
+			&::after
+				display: none
+		.column-3
+			width: 25%
+		.column-1, .column-4
+			width: 37.5%
+		.column-2
+			width: 25%
+	.logo-wrap 
+		.logo-text
+			padding-left: 5px
+			br
+				display: none
+
+
+	.content
+		background-position: 50% 0
+		.wrapper
+			padding-left: 15px
+			padding-right: 15px
+
+	.sevice-cards 
+		.block-title
+			font-size: 1.8em
+	.service-columns
+		width: 33.33333333%
+
+
+
+	.main-heading
+		font-size: 2em
+	.descr-columns
+		width: 100%
+	.mw-400
+		max-width: 400px
+		margin: 0 auto
+
+
+	.service-offer
+		margin-top: 27px
+	.descr-columns
+		.img-wrap
+			margin-top: 27px
+	.descr-img
+		margin-right: auto
+
+
+
+
+	.consultation
+		padding: 25px
+		position: relative
+
+	.consult-column-1, .consult-column-2
+		width: 100%
+	.consult-column-2
+		position: static
+
+	.consultation-heading
+		position: relative
+		top: 50px
+
+	.consultation-form-heading
+		width: 100%
+		top: -12px
+		right: 0
+		left: 0
+
+	.consult-form-descr, .consult-form
+		padding-left: 0
+
+	.hidden-text-desktop
+		display: inline
+	.hidden-text-mob
+		display: none
+
+	.form
+		max-width: 75%
+		margin-left: auto
+		margin-right: auto
+	.consult-form
+		margin-top: 25px
+
+
+	.advantages
+		&-content
+			background-image: none
+		&-heading
+			text-align: center
+		&-column-1
+			margin-left: 10%
+		&-column-2
+			margin-left: 50%
+			top: 0
+		&-column-3
+			margin-left: 10%
+			top: -18px
+		&-column-4
+			margin-left: 50%
+			top: -17px
+		&-column-5
+			margin-left: 10%
+			top: -43px
+		&-column-6
+			margin-left: 50%
+			top: -55px
+		&-item-text
+			max-width: 75%
+
+
+
+
 
 	/**/
+
+
+
+
+
+
+@media only screen and (max-width : 576px)
+	
+	.top-line
+		.columns
+			width: 100%
+			float: none
+
+	.logo-wrap
+		width: 235px
+		margin: 0 auto
+
+	.top-line-worktime, .top-line-contacts
+		width: 140px
+		margin: 0 auto
+		text-align: left
+
+	.bar
+		top: 35px
+
+	.service-columns
+		width: 50%
+	.service-card-title
+		background-position: 21% 39%
+
+	.main-heading-colored
+		display: inline
+
+	.advantages
+		&-content
+			padding-top: 105px
+			padding-bottom: 35px
+		&-heading
+
+		&-column-1
+			margin-left: 0
+		&-column-2
+			margin-left: 0
+		&-column-3
+			margin-left: 0
+			top: 0
+		&-column-4
+			margin-left: 0
+			top: 0
+		&-column-5
+			margin-left: 0
+			top: 0
+		&-column-6
+			margin-left: 0
+			top: 0
+		&-items
+			padding: 30px 0
+		&-item
+			margin-bottom: 20px
+			&.mb-0
+				margin-bottom: 0
+		&-item-text
+			max-width: 100%
+
+	.advantages-btn-wrap
+		top: 0
+/**/
+
+
+
+
 
 
 
@@ -127,6 +376,21 @@
 		.columns
 			width: 100%
 
+	.service-card-title
+		background-position: 3% 39%
+
+
+	.consultation
+		padding: 50px 10px 25px
+		border-width: 6px
+
+	.consultation-form-heading
+		top: -6px
+
+	.form
+		max-width: 100%
+		input
+			padding-left: 15px
 
 	/**/
 
