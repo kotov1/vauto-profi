@@ -119,7 +119,7 @@
 				transform: rotate(-45deg)
 	     
 
-	.service-columns
+	.carservice-columns
 		width: 25%
 
 
@@ -131,11 +131,14 @@
 
 
 
+
 	.consultation-form-heading
 		padding-right: 25px
 	.form
 		input
 			padding-left: 25px
+
+
 
 
 	.advantages
@@ -164,6 +167,38 @@
 	.advantages-btn-wrap
 		margin: 0 auto
 		top: -27px
+
+
+
+	.our-advantage
+		.wrapper
+			padding: 0
+		.columns
+			width: 50%
+
+
+
+	.software
+		.wrapper
+			padding: 0
+		.columns
+			width: 100%
+		&-heading
+			text-align: center
+		&-img-background
+			margin: 0 auto
+		&-description
+			margin-top: 30px
+
+
+	.service-list
+		.wrapper
+			padding: 0
+		.columns
+			width: 50%
+
+
+
 
 	/**/
 
@@ -206,7 +241,7 @@
 	.sevice-cards 
 		.block-title
 			font-size: 1.8em
-	.service-columns
+	.carservice-columns
 		width: 33.33333333%
 
 
@@ -292,7 +327,78 @@
 			max-width: 75%
 
 
+	.page-content
+		div[class~="fl-l"], div[class~="fl-r"]
+			float: none
+			margin: 0 auto 20px
+		div[class^="ml"], div[class^="mr"]
+			margin-left: 0
+			margin-right: 0
+		.text-list
+			&.columns-2
+				li
+					width: 100%
+					float: none
 
+
+
+	.services
+		.services-table
+			width: 80%
+			min-width: auto
+			thead tr 
+				position: absolute
+				top: -9999em
+				left: -9999em
+
+			tr + tr 
+				margin-top: 1.5em
+
+
+			tr, td 
+				display: block
+
+			td 
+				border: none
+				border-bottom: 0.125em solid #3b72c9
+				padding-left: 50%
+				background-image: none
+
+			td
+				&::before 
+					content: attr(data-label)
+					display: inline-block
+					font-weight: bold
+					line-height: 1.5
+					margin-left: -95%
+					width: 100%
+					color: #fff
+
+	.service-list
+		.columns
+			width: 100%
+
+
+
+	.feedbacks
+		background-position: 50% 0
+		&-content-wrap
+			margin-top: 75px
+			border: 12px solid #3c5c97
+		&-client
+			position: relative
+			&::after
+				display: none
+			&-info
+				top: 0
+			&-photo
+				position: absolute
+				width: auto
+		&-content
+			border: none
+			margin-top: 357px
+		&-achievment
+			left: -12px
 
 
 	/**/
@@ -321,9 +427,9 @@
 	.bar
 		top: 35px
 
-	.service-columns
+	.carservice-columns
 		width: 50%
-	.service-card-title
+	.carservice-card-title
 		background-position: 21% 39%
 
 	.main-heading-colored
@@ -360,8 +466,19 @@
 		&-item-text
 			max-width: 100%
 
+
 	.advantages-btn-wrap
 		top: 0
+
+
+	.services
+		.services-table
+			width: 100%
+
+
+	.our-advantage
+		.columns
+			width: 100%
 /**/
 
 
@@ -376,7 +493,7 @@
 		.columns
 			width: 100%
 
-	.service-card-title
+	.carservice-card-title
 		background-position: 3% 39%
 
 
@@ -391,6 +508,73 @@
 		max-width: 100%
 		input
 			padding-left: 15px
+
+
+	.page-content
+		padding-top: 25px
+		h2
+			margin: 10px 0
+		p
+			text-indent: 20px
+		.text-img-wrap
+			width: 290px
+		.text-list
+			padding-left: 15px
+
+
+	.services
+		.services-table
+			td
+				&::before 
+					width: 95%
+
+
+	.our-advantage
+		&-img-wrap
+			width: 290px
+
+	.software
+		&-description
+			margin-top: 0
+		&-img-background
+			width: 290px
+			background-size: 100%
+		&-img-wrap
+			width: 100%
+			height: 157px
+		&-btn-wrap
+			margin-top: 15px
+
+
+
+
+	.service-list
+		&-img-bg
+			width: 290px
+		&-img-wrap
+			width: 100%
+
+
+	.feedbacks
+		background-position: 75% 0
+		&-content-wrap
+		&-client
+			&-info
+				width: auto
+				max-width: 100%
+			&-tel, &-email
+				width: 100%
+				float: none
+			&-email
+				text-align: left
+			&-photo
+				width: 290px
+				height: auto
+				position: static
+		&-content
+			border: none
+			margin-top: 357px
+
 
 	/**/
 

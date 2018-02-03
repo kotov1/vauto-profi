@@ -85,7 +85,6 @@ textarea
 
 
 table
-	border-collapse: collapse
 	border-spacing: 0
 
 td, th
@@ -158,6 +157,11 @@ img
 
 
 
+.fl-r
+	float: right
+
+.fl-l
+	float: left
 
 
 .clearfix
@@ -179,9 +183,13 @@ img
 	clear: both
 
 
-h1, h2, h3
+h1, h2, h3, h4
 	font-family: $bold_font_family
 
+h1
+	font-size: 3em
+h2
+	font-size: 2.25em
 
 .columns
 	position: relative
@@ -369,7 +377,7 @@ body
 		margin-bottom: 15px
 
 
-.service-columns
+.carservice-columns
 	width: 16.66666667%
 	padding-right: 20px
 	padding-left: 20px
@@ -379,7 +387,7 @@ body
 	color: #2c4e8e
 	text-align: center
 
-.service-card
+.carservice-card
 	min-height: 55px
 	margin-bottom: 15px
 	position: relative
@@ -391,13 +399,13 @@ body
 	&:hover
 		.card-hidden-text
 			display: block
-		.service-card-title
+		.carservice-card-title
 			position: absolute
 			top: -17px
 			left: 50%
 			transform: translateX(-50%)
 			transition: all .5s
-		.service-card-tel
+		.carservice-card-tel
 			background-color: #09478c
 
 .card-hidden-text
@@ -406,7 +414,7 @@ body
 	color: #09478c
 
 
-.service-card-title
+.carservice-card-title
 	width: 100%
 	padding: 1px 0 2px
 	color: #04515a
@@ -417,7 +425,7 @@ body
 
 
 
-.service-card-tel
+.carservice-card-tel
 	background-color: #464646
 	box-shadow: 0 -1px 0 #595959
 	transition: all .5s
@@ -426,7 +434,7 @@ body
 		color: #fff
 		text-decoration: none
 
-.service-card-more
+.carservice-card-more
 	padding: 1px 0 2px
 	a
 		cursor: default
@@ -445,7 +453,6 @@ body
 
 .main-heading
 	margin-top: 7px
-	font: 3em $bold_font_family
 	color: #000
 	text-decoration: underline
 	&-colored
@@ -519,6 +526,7 @@ body
 
 // ================================================
 .consultation-wrap
+	margin-bottom: -90px
 	position: relative
 	z-index: 1
 .consultation
@@ -654,7 +662,6 @@ body
 // ================================================
 .advantages
 	position: relative
-	top: -90px
 	max-height: 767px
 	background: url('../img/advantages-bg.jpg') no-repeat
 	background-position: center
@@ -706,19 +713,342 @@ body
 	&-item-text
 		max-width: 67%
 
-
-
-
-
-
-
-
 .advantages-btn-wrap
 	max-width: 284px
 	position: relative
 	top: -119px
 .advantages-btn
 	padding: 20px
+
+
+
+
+// =====================================
+.page-content
+
+	.text-block, .text-list-wrap
+		margin-bottom: 25px
+
+	.ml-270
+		margin-left: 270px
+	.mr-270
+		margin-right: 270px
+
+
+	h2
+		color: #3b5d98
+		text-align: center
+
+	p
+		margin: 0
+		// text-align: justify
+		line-height: 1.5
+		text-indent: 40px
+
+	.text-list
+		margin: 5px 0 0 0
+		padding: 0 0 0 100px
+		&.columns-2
+			&:before, &:after
+				content: " "
+				display: table
+				clear: both
+			li
+				width: 46%
+				float: left
+				&:nth-child(2n+1)
+					margin-right: 4%
+
+
+	.text-img-wrap
+		width: 260px
+		height: 170px
+		border: 6px solid $accent_color
+		overflow: hidden
+
+
+
+
+
+
+
+// ==========================
+
+.services
+	padding: 0 0 30px
+	background: url('../img/advantages-bg.jpg') no-repeat
+	background-position: 50% 85%
+	background-size: cover
+	&-heading
+		color: #fff
+		text-align: center
+
+	.table-wrap
+
+	&-table
+		min-width: 535px
+		margin: 0 auto
+		border: 4px solid #3b72c9
+		border-radius: 6px
+		th,td
+			padding: 5px 0
+		th
+			padding: 5px 5px 5px 0
+			color: #fff
+			text-align: left
+			background-color: #1194e9
+			background-image: linear-gradient(180deg, #1194e9, #0b4da1)
+			&:first-child
+				padding-left: 40px
+		td
+			color: #00fff0
+			border-bottom: 1px solid #3b72c9
+			&:first-child
+				padding-left: 40px
+				background: url('../img/table-icon.png') no-repeat 5px 50%
+
+
+// ================================
+.our-advantage
+
+	h2
+		text-transform: uppercase
+		color: #2c4e8e
+		text-align: center
+
+	.wrapper
+		padding: 0 82px
+
+	.columns
+		width: 33.33333333%
+		margin-bottom: 10px
+		text-align: center
+
+	&-img-wrap
+		width: 260px
+		height: 167px
+		border: 8px solid $accent_color
+		display: inline-block
+		overflow: hidden
+
+
+// ======================================
+.software
+	padding-bottom: 100px
+	.wrapper
+		padding: 0 50px 0 145px
+	&-heading
+		line-height: 1.2
+		h2
+			margin-bottom: 18px
+	&-heading-colored
+		color: #2c4e8e
+		display: block
+	&-column-1
+		width: 47%
+	&-column-2
+		width: 53%
+
+	&-img-background
+		width: 337px
+		height: 249px
+		padding: 9px 8px
+		overflow: hidden
+		background: url('../img/software-pc.png') no-repeat
+	&-img-wrap
+		width: 322px
+		height: 184px
+		overflow: hidden
+
+	&-description
+		margin: 0
+		padding: 0
+		font-size: 1.125em
+		list-style-type: none
+		li
+			margin-bottom: 15px
+			padding-left: 30px
+			background: url('../img/software-icon.png') no-repeat 0 0
+			color: #1f59a1
+		.sub-item
+			display: block
+			color: #000
+
+	&-btn-wrap
+		max-width: 528px
+		margin: 56px auto 0
+		text-align: center
+	&-btn
+		width: 100%
+		padding: 15px
+		font-size: 1em
+
+	&-btn-info
+		display: inline-block
+		margin-top: 20px
+		font-size: 14px
+		color: #949494
+	.btn-block-wrapper
+		padding: 0 15px
+
+
+// ======================================
+
+.service-list
+	padding: 10px 0
+	background: url('../img/service-list-bg.jpg') no-repeat
+	background-size: cover
+	.wrapper
+		padding: 0 60px
+	&-heading
+		margin-top: 10px
+		margin-bottom: 20px
+		padding-left: 50px
+		color: #fff
+		text-transform: uppercase
+
+	&-title
+		margin-top: 0
+		margin-bottom: -8px
+		position: relative
+		font-size: 2.25em
+	&-subtitle
+		margin: 0
+		padding: 2px 0
+		display: inline-block
+		font-size: 1.875em
+		background-color: #08326e
+
+	.columns
+		width: 33.33333333%
+		margin-bottom: 15px
+		text-align: center
+
+	&-img-bg
+		position: relative
+		width: 270px
+		margin: 0 auto
+		padding: 5px 5px 0px 5px
+		background-color: #fff
+		overflow: hidden
+
+	&-img-wrap
+		width: 260px
+		height: 167px
+		border: 8px solid $accent_color
+		display: inline-block
+		overflow: hidden
+
+	&-text
+		position: absolute
+		bottom: 16px
+		left: 0
+		display: inline-block
+		min-width: 70%
+		padding: 5px
+		font-size: 18px
+		background: #08326e
+		color: #fff
+		text-align: left
+
+
+// ==============================================
+
+.feedbacks
+	padding-top: 5px
+	padding-bottom: 100px
+	background: url('../img/decor.png') no-repeat
+	background-position: 418px 0
+	&-heading
+		margin-top: 5px
+		margin-bottom: 20px
+	&-title
+		margin: 0
+		color: #2f5190
+	&-subtitle
+		margin: 0
+		padding: 2px 0
+		display: inline-block
+		font-size: 2.25em
+
+	&-content-wrap
+		position: relative
+
+	&-client
+		min-width: 385px
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		z-index: 10
+		font-size: 1em
+		&::after
+			content: ''
+			display: inline-block
+			position: absolute
+			top: 0
+			left: -16px
+			width: 16px
+			height: 16px
+			background-color: #fff
+		&-info
+			width: 100%
+			padding: 14px
+			position: absolute
+			top: -16px
+			left: 0
+			background-color: #3c5c97
+			color: #fff
+			&-head, &-name
+				margin-bottom: 3px
+				text-transform: uppercase
+			&-head
+				color: #bebebe
+		&-tel, &-email
+			width: 50%
+			float: left
+		&-email
+			text-align: right
+		&-photo
+			position: absolute
+			width: 100%
+			height: 219px
+			left: 0
+			bottom: -219px
+
+	&-content
+		position: relative
+		padding: 11px 25px 20px
+		font-size: 1.125em
+		border: 12px solid #3c5c97
+		&::after
+			content: ''
+			display: inline-block
+			width: 70px
+			height: 40px
+			position: absolute
+			top: -26px
+			left: 20px
+			background: url('../img/icon-pencil.jpg') no-repeat
+		&-heading
+			margin-top: 20px
+			margin-bottom: 5px
+			color: #3c5c97
+		&-list
+			margin: 0
+			padding: 0
+			list-style-type: none
+
+
+
+	&-achievment
+		position: absolute
+		min-width: 385px
+		top: -82px
+		right: 0
+		font: 1.5em $bold_font_family
+		color: #08326e
+
 
 
 
