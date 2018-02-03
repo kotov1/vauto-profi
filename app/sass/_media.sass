@@ -556,24 +556,40 @@
 
 
 	.feedbacks
-		background-position: 75% 0
+		background-position: 90% 0
 		&-content-wrap
 		&-client
+			min-width: auto
 			&-info
+				position: static
 				width: auto
 				max-width: 100%
+				padding: 0 0 10px 0
+				&-head, &-name
+					margin-bottom: 6px
+
 			&-tel, &-email
+				margin-bottom: 6px
 				width: 100%
 				float: none
 			&-email
 				text-align: left
 			&-photo
-				width: 290px
+				min-width: 265px
+				width: 100%
 				height: auto
 				position: static
 		&-content
-			border: none
-			margin-top: 357px
+			padding: 10px
+			margin-top: 40px
+			font-size: 15px
+			&::after
+				top: -24px
+				left: 0	
+
+		&-achievment
+			font-size: 1.2em
+			min-width: auto
 
 
 	/**/
