@@ -663,7 +663,7 @@ body
 .advantages
 	position: relative
 	max-height: 767px
-	background: url('../img/advantages-bg.jpg') no-repeat
+	background: url('../img/section-bg.jpg') no-repeat
 	background-position: center
 	background-size: cover
 	color: #fff
@@ -776,7 +776,7 @@ body
 
 .services
 	padding: 0 0 30px
-	background: url('../img/advantages-bg.jpg') no-repeat
+	background: url('../img/section-bg.jpg') no-repeat
 	background-position: 50% 85%
 	background-size: cover
 	&-heading
@@ -956,7 +956,7 @@ body
 
 .feedbacks
 	padding-top: 5px
-	padding-bottom: 100px
+	padding-bottom: 30px
 	background: url('../img/decor.png') no-repeat
 	background-position: 418px 0
 	&-heading
@@ -1048,6 +1048,80 @@ body
 		right: 0
 		font: 1.5em $bold_font_family
 		color: #08326e
+
+
+
+// =================================
+.request
+	padding: 20px 0
+	background: url('../img/section-bg.jpg') no-repeat
+
+	.wrapper
+		padding: 0 60px
+	
+	&-background
+		position: relative
+		padding: 12px
+		background-color: #fff
+		&::after
+			content: ''
+			display: inline-block
+			width: 50%
+			position: absolute
+			top: 12px
+			right: 12px
+			min-height: 48px
+			background-color: #3c5c97
+
+	&-heading
+		position: absolute
+		padding: 4px 47px 4px 15px
+		left: 35px
+		top: 0
+		display: inline-block
+		background-color: #fff
+		text-transform: uppercase
+		font: 1.5em $bold_font_family
+		&-colored
+			color: #3c5c97
+
+	&-form-wrap
+		border: 11px solid #3c5c97
+
+
+	&-form
+		padding: 50px 25px 15px
+
+		label, .form-btn-wrap
+			display: inline-block
+		label
+			max-width: 227px
+			margin-right: 10px
+		input
+			padding-left: 15px
+
+	.form-btn-wrap
+		min-width: 240px
+		margin-left: 30px
+	.form-btn
+		padding: 13px 40px
+		width: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
