@@ -222,6 +222,20 @@
 				margin-left: 0
 
 
+	.questions
+		.wrapper
+			padding: 0
+
+		&-heading
+			font-size: 2.5em
+			padding-top: 10px
+			&::after
+				bottom: 0
+
+		&-form-wrap
+			padding: 15px
+
+
 	/**/
 
 
@@ -405,7 +419,7 @@
 	.feedbacks
 		background-position: 50% 0
 		&-content-wrap
-			margin-top: 75px
+			margin-top: 10px
 			border: 12px solid #3c5c97
 		&-client
 			position: relative
@@ -419,8 +433,11 @@
 		&-content
 			border: none
 			margin-top: 357px
-		&-achievment
-			left: -12px
+		&-slide
+			padding-top: 0
+		&-heading, &-achievment
+			position: static
+
 
 
 	.request
@@ -428,18 +445,52 @@
 			position: static
 			transform: none
 			width: 100%
-			padding: 15px 15px 15px 25px
+			padding: 15px 15px 15px 14.5vw
 		&-form
 			padding-top: 5px
-			max-width: 100%
 			label, .form-btn-wrap
 				display: block
-				max-width: 280px
+				max-width: 100%
 				min-width: auto
 			.label-name
 				margin-right: 0
 			.form-btn-wrap
 				margin-left: 0
+
+
+
+	.questions
+		&-wrap
+			max-width: 832px
+			margin: 0 auto
+			padding: 10px
+			border: 12px solid $accent_color
+			position: relative
+			background-color: #fff
+		&-inline-wrap
+			padding: 10px 10px 20px
+
+		&-column-1 ,&-column-2
+			width: 100%
+		&-heading
+			padding: 0
+			left: 0
+			&::after
+				transform: scale(.5) rotate(90deg)
+				bottom: -20px
+				right: -50px
+
+			span
+				display: inline-block
+			br
+				display: block
+		&-form-wrap
+			padding-top: 20px
+		&-form-heading
+			padding-left: 10vw
+
+		.form-btn-wrap
+			margin-top: 19px
 
 
 	/**/
@@ -520,6 +571,9 @@
 	.our-advantage
 		.columns
 			width: 100%
+
+
+
 /**/
 
 
@@ -641,6 +695,13 @@
 			padding: 5px 10px
 			label, .form-btn-wrap
 				max-width: 280px
+
+	.questions
+		&-form-heading
+			padding-left: 0
+		&-form-wrap
+			padding-left: 0
+			padding-right: 0
 	/**/
 
 
