@@ -26,9 +26,12 @@ var gulp           = require('gulp'),
 
 gulp.task('js', function() {
 	return gulp.src([
+		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick-carousel/slick/slick.min.js',
 		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-		'app/js/common.js', // Всегда в конце
+		'app/js/copyright.min.js',
+		'app/libs/jquery-mask-plugin/dist/jquery.mask.min.js',
+		'app/js/common.js' // Всегда в конце
 		])
 	.pipe(concat('scripts.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name=“robots” content=“noindex,nofollow”>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="img/favicon.ico">
+
+		<script type="text/javascript">
+			var sec=5;
+			function Sec() {
+
+				document.getElementById("sec").innerHTML=sec;
+				sec--;
+				if(sec==-1) {
+				location.replace("index.html")
+				}
+				setTimeout('Sec()',1000);
+			}
+
+		</script>
+
+		<noscript>
+			<meta http-equiv="refresh" content="5; index.html">
+		</noscript>
+
+		<title>ВАВТОПРОФИ</title>
+
+		<!-- Custom styles for this template -->
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	</head>
+
+	<body>
+	
+	<div class="page-wrapper">
+
+		<header>
+			<div class="top-line">
+				<div class="wrapper">
+					<div class="line">
+						<div class="columns column-1">
+							<div class="logo-wrap clearfix">
+								<div class="logo-img-wrap">
+									<img src="img/logo.png" class="logo-img" alt="Logo">
+								</div>
+									<div class="logo-text">
+										<div class="logo-title">«ВАВТОПРОФИ»</div>
+										<div class="logo-subtitle">Официальный дилер завода<br> «Название»</div>
+									</div>
+							</div>
+						</div>
+						<div class="columns column-3">
+								<div class="top-line-worktime">
+									<div>Режим работы</div>
+									<div>9:00 - 21:00</div>
+									<div>без выходных</div>
+								</div>
+						</div>
+						<div class="columns column-4">
+							<div class="top-line-contacts">
+								<div class="tel"><noindex><a href="tel:84955555555">8 (495) 555-55-55</a></noindex></div>
+								<div class="tel"><noindex><a href="tel:84955555555">8 (495) 555-55-55</a></noindex></div>
+								<div class="mail"><a href="mailto:info@vauto-profi.ru">info@vauto-profi.ru</a></div>
+							</div>
+						</div>
+						<div class="columns column-2">
+							<div class="btn-wrap top-line-btn-wrap">
+								<button class="btn top-line-btn mfp-btn-tel">Обратный звонок</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="error">
+			<wrapper>
+
+				<div class="error-number">404</div>
+				<div class="error-text">Страница не найдена</div>
+				<div class="redirect">Вы будете перенаправлены на главную страницу через <span id="sec">5</span> секунд</div>
+
+			</wrapper>
+		</div>
+
+
+
+
+
+	<div class="modal-tel-wrap mfp-hide" id="modal-tel-wrap">
+		<div class="modal-form">
+			<div class="mfp-close"></div>
+				
+				<div class="logo-wrap clearfix">
+					<div class="ta-center">
+						<div class="logo-img-wrap">
+							<img src="img/logo.png" class="logo-img" alt="Logo">
+						</div>
+						<div class="logo-text">
+							<div class="logo-title">«ВАВТОПРОФИ»</div>
+							<div class="logo-subtitle">Официальный дилер завода<br> «Название»</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-info">Мы перезвоним вам в течение 10 минут</div>
+				<form action="">
+					<label class="label-tel"><span class="input-heading">Введите ваш телефон</span><input type="tel" name="Телефон" data-mask="+7(000)000-00-00" placeholder="+7(__)___-__-__" required></label>
+					<div class="btn-wrap form-btn-wrap">
+						<button type="submit" class="btn form-btn">Жду звонка!</button>
+					</div>
+				</form>
+
+		</div>
+	</div>
+
+
+	</div>
+
+
+		<script src="js/scripts.js"></script>
+		<script>
+			Sec();
+		</script>
+	
+	</body>
+</html>
