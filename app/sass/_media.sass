@@ -19,11 +19,14 @@
 		height: 0
 		min-height: auto
 
+	.top-menu
+		flex-direction: column
+
 	.menu-collapsed 
 		transition: all .25s
 		position: fixed
-		top: 10px
-		right: 9px
+		top: -36px
+		right: -36px
 		height: 36px
 		width: 36px
 		z-index: 100
@@ -43,7 +46,7 @@
 		background-color: rgba(0, 0, 0, 0.95)
 		position: fixed
 		right: 12px
-		top: 105px
+		top: 80px
 		&:before 
 			transition: all .25s
 			content: ""
@@ -81,18 +84,21 @@
 		top: 0
 		right: 0
 		background-color: rgba(45, 104, 165, 0.85)
+		overflow-y: auto
+		overflow-x: hidden
 		ul 
+			display: block
+			text-align: center
 			transition: all 0s
 			position: relative
 			right: 0
 			z-index: 2
-			text-align: center
-			padding-top: 60px
+			padding-top: 100px
 
 		li
 			float: none
 	   
-		a 
+		a, span
 			transition: all .15s
 			text-decoration: none
 			color: #fff
@@ -130,7 +136,8 @@
 
 
 
-
+	.consultation-wrap
+		margin-bottom: -30px
 
 	.consultation-form-heading
 		padding-right: 25px
@@ -144,28 +151,32 @@
 	.advantages
 		max-height: 100%
 		&-content
+			padding-top: 45px
 			padding-left: 0
-			background-position: 115% -11%, -15% 30%, 115% 45%, -24% 49%, 105% 64%, -33% 68%, 95% 83%
-		&-column-1
-			margin-left: 21%
-		&-column-2
-			margin-left: 51%
-			top: -7px
-		&-column-3
-			margin-left: 14%
-			top: -48px
-		&-column-4
-			margin-left: 44%
-			top: -50px
-		&-column-5
-			margin-left: 8%
-			top: -98px
-		&-column-6
-			margin-left: 38%
-			top: -107px
+			background-position: 100% -17%
+		.line
+			padding-top: 15px
+			padding-bottom: 15px
+		&-column-1, &-column-3, &-column-5
+			top: 0
+			margin-left: 30%
+			.advantages-img-wrap
+				left: -182px
+		&-column-2, &-column-4, &-column-6
+			top: 0
+			margin-left: 50%
+			.advantages-img-wrap
+				right: 35px
+
+		.columns
+			.advantages-img-wrap
+				top: 0
+
+		&-item-text
+			max-width: 56%
 
 	.advantages-btn-wrap
-		margin: 0 auto
+		margin: 45px auto 0
 		top: -27px
 
 
@@ -260,12 +271,15 @@
 		.column-1, .column-4
 			width: 37.5%
 		.column-2
-			width: 25%
+			width: 100%
 	.logo-wrap 
 		.logo-text
 			padding-left: 5px
 			br
 				display: none
+
+	.bar
+		top: 35px
 
 
 	.content
@@ -339,31 +353,32 @@
 
 	.advantages
 		&-content
-			background-image: none
+			background: none
 		&-heading
-			text-align: center
-		&-column-1
-			margin-left: 10%
-		&-column-2
-			margin-left: 50%
-			top: 0
-		&-column-3
-			margin-left: 10%
-			top: -18px
-		&-column-4
-			margin-left: 50%
-			top: -17px
-		&-column-5
-			margin-left: 10%
-			top: -43px
-		&-column-6
-			margin-left: 50%
-			top: -55px
+		&-subtitle
+			display: inline
+		.columns
+			margin-left: 47%
+			.advantages-img-wrap
+				right: auto
+				left: -170px
+				width: 122px
+				height: 106px
+
 		&-item-text
 			max-width: 75%
 
 
 	.page-content
+		h1
+			font-size: 2.5em
+		h2
+			font-size: 2em
+		h3
+			font-size: 1.75em
+		h4
+			font-size: 1.5em
+
 		div[class~="fl-l"], div[class~="fl-r"]
 			float: none
 			margin: 0 auto 20px
@@ -387,20 +402,19 @@
 				top: -9999em
 				left: -9999em
 
-			tr + tr 
-				margin-top: 1.5em
+			// tr + tr 
+			// 	margin-bottom: 1.5em
 
 
 			tr, td 
 				display: block
+				position: relative
 
 			td 
 				border: none
 				border-bottom: 0.125em solid #3b72c9
 				padding-left: 50%
 				background-image: none
-
-			td
 				&::before 
 					content: attr(data-label)
 					display: inline-block
@@ -409,6 +423,20 @@
 					margin-left: -95%
 					width: 100%
 					color: #fff
+				&::after
+					content: ''
+
+			tr:last-child
+				td:last-child
+					border-bottom: none
+
+			.img-cell
+				display: inline-block
+				width: 100%
+				position: absolute
+				top: -2px
+				transform: translateX(-30px)
+				border: none
 
 	.service-list
 		.columns
@@ -423,6 +451,7 @@
 			border: 12px solid #3c5c97
 		&-client
 			position: relative
+			top: 0
 			&::after
 				display: none
 			&-info
@@ -546,9 +575,9 @@
 		margin: 0 auto
 
 	.top-line-worktime, .top-line-contacts
-		width: 140px
+		// width: 140px
 		margin: 0 auto
-		text-align: left
+		text-align: center
 
 	.bar
 		top: 35px
@@ -633,7 +662,9 @@
 			width: 100%
 
 	.carservice-card-title
-		background-position: 3% 39%
+		&::before
+			top: 4px
+			left: 3px
 
 
 	.consultation
@@ -651,8 +682,15 @@
 
 	.page-content
 		padding-top: 25px
+		h1
+			font-size: 2.25em
 		h2
+			font-size: 1.8em
+		h3
+			font-size: 1.5em
 			margin: 10px 0
+		h4
+			font-size: 1.25em
 		p
 			text-indent: 20px
 		.text-img-gallery
@@ -670,10 +708,15 @@
 
 	.services
 		.services-table
+			font-size: 13px
 			td
+				// vertical-align: top
 				&::before 
 					width: 95%
-
+					// padding-right: 35px
+					// vertical-align: top
+			.img-cell
+				transform: translate(-27px,-1px)
 
 	.our-advantage
 		&-img-wrap
@@ -699,6 +742,22 @@
 			width: 290px
 		&-img-wrap
 			width: 100%
+
+
+	.advantages
+		&-content
+		.columns
+			margin-left: 33%
+			.advantages-img-wrap
+				left: -95px
+				width: 86px
+				height: 86px
+				transform: none
+		&-items
+			padding: 30px 0 0
+
+		&-item-text
+			max-width: 100%
 
 
 	.feedbacks
@@ -745,7 +804,7 @@
 		&-form
 			padding: 5px 10px
 			label, .form-btn-wrap
-				max-width: 280px
+				max-width: 100%
 
 	.questions
 		&-form-heading
@@ -762,10 +821,5 @@
 
 	.call-btn 
 		transform: scale(.8)
-	/**/
-
-
-
-@media only screen and (max-width : 320px)
 
 	/**/

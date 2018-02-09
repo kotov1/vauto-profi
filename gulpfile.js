@@ -15,25 +15,25 @@ var gulp           = require('gulp'),
 
 // Пользовательские скрипты проекта
 
-// gulp.task('common-js', function() {
-// 	return gulp.src([
-// 		'app/js/common.js',
-// 		])
-// 	.pipe(concat('common.min.js'))
-// 	.pipe(uglify())
-// 	.pipe(gulp.dest('app/js'));
-// });
+gulp.task('common-js', function() {
+	return gulp.src([
+		'app/js/common.js',
+		])
+	.pipe(concat('common.min.js'))
+	// .pipe(uglify())
+	.pipe(gulp.dest('app/js'));
+});
 
-gulp.task('js', function() {
+gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick-carousel/slick/slick.min.js',
 		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 		'app/js/copyright.min.js',
 		'app/libs/jquery-mask-plugin/dist/jquery.mask.min.js',
-		'app/js/common.js' // Всегда в конце
+		'app/js/common.min.js' // Всегда в конце
 		])
-	.pipe(concat('scripts.js'))
+	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({stream: true}));
@@ -51,7 +51,7 @@ gulp.task('browser-sync', function() {
 gulp.task('sass', function() {
 	return gulp.src('app/sass/**/*.sass')
 	.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
-	// .pipe(rename({suffix: '.min', prefix : ''}))
+	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 15 versions']))
 	// .pipe(cleanCSS()) // Опционально, закомментировать при отладке
 	.pipe(gulp.dest('app/css'))
@@ -74,11 +74,12 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 
 	var buildFiles = gulp.src([
 		'app/*.html',
+		'app/*.php',
 		'app/.htaccess',
 		]).pipe(gulp.dest('dist'));
 
 	var buildCss = gulp.src([
-		'app/css/main.min.css',
+		'app/css/styles.min.css',
 		]).pipe(gulp.dest('dist/css'));
 
 	var buildJs = gulp.src([
