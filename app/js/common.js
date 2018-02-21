@@ -20,8 +20,8 @@ $(function() {
 		slidesToShow: 1,
 		infinite: true,
 		autoplay: true,
-		nextArrow: '<div class="slick-arrow slick-prev"></div>',
-		prevArrow: '<div class="slick-arrow slick-next"></div>'
+		nextArrow: '<div class="slick-arrow slick-next"></div>',
+		prevArrow: '<div class="slick-arrow slick-prev"></div>'
 	});
 
 	
@@ -210,7 +210,7 @@ $(function() {
 	});
 
 	$(".top-menu").on("click","a", function (event) {
-		event.preventDefault();
+		// event.preventDefault();
 		var id  = $(this).attr('href'),
 			top = $(id).offset().top;
 		$('body,html').animate({scrollTop: top}, 1500);
